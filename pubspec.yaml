@@ -1,0 +1,49 @@
+name: chatty_app
+description: Chatty is a simple, easy to use chat app that makes it easy to communicate to friends and family
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.2.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_analytics: ^5.0.2
+  firebase_auth: ^0.14.0+5
+  firebase_storage: ^3.0.6
+  cloud_firestore: ^0.12.9+4
+  modal_progress_hud: ^0.1.3
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+   - assets/fonts/
+   - assets/images/
+   - assets/images/placeholder/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/OpenSans-LightItalic.ttf
+          style: italic
+          weight: 300
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-Italic.ttf
+          style: italic
+          weight: 400
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-BoldItalic.ttf
+          style: italic
+          weight: 700
